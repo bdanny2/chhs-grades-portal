@@ -40,7 +40,7 @@ SHEET_TEACHERS = "Sheet7"
 # --- Authenticate & Load Data ---
 @st.cache_resource(show_spinner=False)
 def get_clients_and_data():
-    service_account_info = json.loads(st.secrets["GCP_SERVICE_ACCOUNT"])
+    service_account_info = st.secrets["gcp_service_account"]
     creds = Credentials.from_service_account_info(
         service_account_info,
         scopes=[
