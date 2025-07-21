@@ -1,11 +1,26 @@
 # Ignore Python cache
+
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
 
-# Ignore secrets
-secrets.toml
-
-# Ignore virtualenv
+# Virtual environments
+.venv/
 venv/
-.env/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Jupyter (optional)
+.ipynb_checkpoints/
+
+# VS Code or other editors
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
 
